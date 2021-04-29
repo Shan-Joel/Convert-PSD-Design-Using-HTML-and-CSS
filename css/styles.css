@@ -1,0 +1,381 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+/* ////////// From this point my styles code begins ////////// */
+
+.wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+/* header {
+	//background: #151515;
+} */
+
+header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#logo {
+	background-image: url("images/logo2.png") no-repeat;
+	height: 70px;
+	width: 280px;
+	float: left;
+	background: white;
+	text-indent: -1000000px;
+}
+
+#logo img {
+	z-index: 20;
+}
+
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header nav a {
+	color: #000;
+	text-decoration: none;
+	font-family: arial;
+	font-weight: 700;
+}
+
+header nav h2 {
+	height: 0;
+	text-indent: -100000px;
+}
+
+header nav li {
+	display: inline-block;
+	text-align: center;
+	margin-top: 17px;
+	margin-left: 20px;
+}
+
+header nav span {
+	color: tomato;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+#leadBanner img {
+	width: 100%;
+}
+
+#leadBanner {
+	max-height: 500px;
+	overflow: hidden;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+
+.banner-overlay .banner-title {
+	color: rgb(0, 0, 0);
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+.banner-overlay p {
+	background-color: white;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+#leadBanner a {
+	background-color: #f8a902;
+	color: black;
+	position: relative;
+	top: 50px;
+	left: 40%;
+	padding: 17px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+section {
+	margin: 40px 0 60px;
+}
+
+section::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#pointsOfSale h2 {
+	height: 0;
+	text-indent: -100000px;
+}
+
+section#pointsOfSale ul {
+	list-style-type: none;
+}
+
+#pointsOfSale li {
+	float: left;
+	width: 32%;
+}
+
+#pointsOfSale li:nth-child(2) {
+	margin: 0 2%;
+}
+
+#pointsOfSale li h3 {
+	padding: 0;
+	color: #f8a902;
+	font-size: 25px;
+	margin: 10px 0 20px;
+}
+
+#pointsOfSale li p {
+	text-align: left;
+	line-height: 1.4em;
+}
+
+#clients,
+#contact {
+	border-top: 2px solid #c10b06;
+	padding: 20px 0;
+}
+
+#clients h2,
+#contact h2 {
+	background-color: #f8a902;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	width: 250px;
+	position: relative;
+	top: -45px;
+	margin: 0 auto;
+	cursor: pointer;
+	border-left: 16px solid #fff;
+	border-right: 16px solid #fff;
+}
+
+#clients img {
+	float: left;
+}
+
+#clients blockquote {
+	float: right;
+	width: 42%;
+	padding: 25px 0;
+}
+
+#contact-method {
+	float: left;
+	padding: 14% 0;
+}
+
+#contact-method li {
+	list-style-type: none;
+	color: #f8a902;
+	line-height: 30px;
+}
+
+#contact-method li a {
+	color: #f8a902;
+}
+
+#contact img {
+	float: right;
+}
+
+#social-nav {
+	clear: both;
+	color: black;
+}
+
+#contact::after {
+	content: "";
+	display: block;
+	clear: both;
+}
